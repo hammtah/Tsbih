@@ -1,6 +1,8 @@
 let body=document.querySelector("body");
 let countingNumber=document.querySelector(".counting-number");
 let tourNumber=document.querySelector(".tour-number");
+const clickSound= new Audio("click.wav");
+const tourSound=new Audio("tour.wav");
 
 let counter=0;
 if(localStorage.getItem("counterNumber")){
@@ -11,13 +13,10 @@ if(localStorage.getItem("tourNumber")){
     tour=localStorage.getItem("tourNumber");
 } 
 
-let max=100;
+let max=3;
 
 render();
-// document.querySelector(".counting-number").addEventListener("dblclick",()=>{
-//     document.querySelector("body").classList.toggle("white-back");
-//     document.querySelector("body").classList.toggle("dark-back");
-// })   
+
 
 
 document.addEventListener("click",(e)=>{
@@ -31,7 +30,10 @@ document.addEventListener("click",(e)=>{
         }
         else{
             counter++;
+            clickSound.play();
             if(counter>=max) {
+                tourSound.play();
+                if ("vibrate" in navigator) navigator.vibrate(200);
                 counter=0;
                 tour++;
             }

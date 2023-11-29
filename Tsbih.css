@@ -35,11 +35,12 @@ body{
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
 
 }
 .tour-div h2,i{
     padding: 1rem;
+    font-size: 1.5rem;
 }
 /* .tour-div *:hover{
     background-color: grey;}
