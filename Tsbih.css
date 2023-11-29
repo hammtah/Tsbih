@@ -1,0 +1,59 @@
+*,*::after,*::before{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Nova Square', sans-serif;
+    user-select: none;
+    height: 100vh;
+    font-size: 18px;
+    display: grid;
+    grid-template-areas:
+        "top-left top top-right"
+        "middle-left middle middle-right"
+        "bottom-left bottom bottom-right";
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+
+}
+/* counter */
+.counting-div{
+    grid-area: middle;
+    margin:auto
+}
+.counting-number{
+    font-size: 6rem;
+}
+
+/* tours */
+.tour-div{
+    grid-area: bottom;
+    margin: auto auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-size: 1.2rem;
+
+}
+.tour-div h2,i{
+    padding: 1rem;
+}
+/* .tour-div *:hover{
+    background-color: grey;}
+ */
+
+.dark-back{
+    background-color: #292929;
+    color: #f9f9f9;
+}
+.white-back{
+    background-color: #f9f9f9;
+    color:#292929;
+
+}
+/* .tour-number:hover{
+    background-color: grey;
+} */
