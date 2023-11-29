@@ -1,6 +1,6 @@
-let body=document.querySelector("body");
-let countingNumber=document.querySelector(".counting-number");
-let tourNumber=document.querySelector(".tour-number");
+const body=document.querySelector("body");
+const countingNumber=document.querySelector(".counting-number");
+const tourNumber=document.querySelector(".tour-number");
 const clickSound= new Audio("click.wav");
 const tourSound=new Audio("tour.wav");
 
@@ -12,9 +12,9 @@ let tour=0;
 if(localStorage.getItem("tourNumber")){
     tour=localStorage.getItem("tourNumber");
 } 
-
-let max=3;
-
+let max=window.prompt("enter max");
+if(!Number(max)) max=100;
+console.log(max)
 render();
 
 
@@ -25,8 +25,10 @@ document.addEventListener("click",(e)=>{
         document.querySelector("body").classList.toggle("dark-back");
     }
     else if(e.target.classList.contains("fa-rotate-right")){
-            counter=0;
-            tour=0;
+            if(confirm("are you sure ?")==true){
+                counter=0;
+                tour=0;
+            }
         }
         else{
             counter++;
