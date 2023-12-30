@@ -14,17 +14,24 @@ body{
         "top-left top top-right"
         "middle-left middle middle-right"
         "bottom-left bottom bottom-right";
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 200px 1fr;
     justify-items: center;
 
 }
 /* counter */
 .counting-div{
     grid-area: middle;
-    margin:auto
+    display: grid;
+    margin: auto;
+    grid-template: 80px 1fr/ 1fr 21px;
 }
 .counting-number{
-    font-size: 6rem;
+    font-size: 7rem;
+    display: inline-block;
+}
+.tour-number{
+    display: inline-block;
+    grid-area: 4/2/span 1/span 1;
 }
 
 /* tours */
@@ -35,10 +42,16 @@ body{
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    border-bottom:5px solid #292929;
 
     /* font-size: 1.2rem; */
 
+}
+
+.white{
+    border-bottom:2px solid #f9f9f9;
+}
+.dark{
+    border-bottom:2px solid #292929;
 }
 .tour-div h2,i{
     padding: 1rem;

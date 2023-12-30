@@ -1,0 +1,128 @@
+*,*::after,*::before{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Nova Square', sans-serif;
+    direction: rtl;
+    font-family: 'Cairo', sans-serif;
+}
+.dark-back{
+    background-color: #292929;
+    color: #f9f9f9;
+}
+.dark-inpt{
+    background-color: #140330c7;
+    color: #f9f9f9;
+}
+
+/* #f9f9f9
+#292929 */
+header,main,footer{
+    padding:10px;
+    max-width: 400px;
+    margin:0 auto;
+}
+main{
+    padding-top: 0;
+    margin-bottom: 4rem;
+}
+header{
+    margin-bottom: 10px;
+    position: sticky;
+    top:0;
+    bottom: auto;
+    left:0;
+    right: 0;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: #8ac4cd;
+
+}
+h1{
+    /* background-color: beige; */
+    font-size: 23px;
+    letter-spacing: 1px;
+    margin: 0;
+    margin-right: 1em;
+}
+
+
+
+main{
+    text-align: center;
+}
+.dh{
+    padding:10px;
+    border-radius: 5px;
+    border: 1.5px solid #29292940 ;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* overflow: auto; */
+    height: auto;
+
+}
+
+
+footer{
+    position: fixed;
+    top:auto;
+    bottom: 0;
+    left: 0;
+    right:0;
+    margin: 0 auto;
+    background-color: #8ac4cd;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.inpt{
+    box-sizing: border-box;
+    padding: 13px 16px;
+    width: 100%;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: 1px solid var(--Black-20, rgba(17, 17, 19, 0.20));
+    font-size: 1rem;
+}
+.add{
+    padding: 5px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    border:none;
+    width: 3.2rem;
+    height: 3rem;
+    }
+/* .add:hover{
+    background-color: rgba(169, 169, 169, 0.58);
+} */
+
+form{
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+
+.val{
+    font-size: 1rem;
+}
+
+.delete{
+    padding:8px;
+    /* width: 2rem;
+    height: 2rem; */
+}
+
+
+/* 
+
+.delete img{
+    width: 100%;
+} */
+.dark-dh{
+    border: 1.5px solid #ffffff29 ;
+}
